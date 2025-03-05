@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bidding - MammothFarms</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="bidding.js" defer></script>
+</head>
+<body>
+
+<header>
+    
+    <div class="logo-left">
+        <img src="logo.png" alt="MammothFarms Logo">
+    </div><h1>Bidding Arena</h1>
+    <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="promo.html">Promo Info</a></li>
+                <li><a href="bidding.html">Bid & Win</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="https://www.mammothfarms.com" target="_blank">Main Site</a></li>
+            </ul>
+        </nav>
+        <div class="logo-right">
+        <img src="logo.png" alt="MammothFarms Logo">
+    </div>
+</header>
+
+<section class="bidding-info">
+    <div class="marquee">
+        <span class="scroll-text">⏳ Bidding lasts **2 days** before the highest bidder wins! 🏆</span>
+    </div>
+
+    <h2>Exclusive Bid Deals</h2>
+    <div class="bid-promo">
+    Products worth <strong>$5000, $3000, $2000</strong> are placed at 
+    <span style="color: yellow;">discounted bid prices!</span>
+</div>
+    <img src="bid.jpg" alt="MammothFarms Logo" class="bid-image">
+    <h3>Current Bid: <span id="current-bid">$500</span></h3>
+
+    <h3>Place Your Bid</h3>
+    <form id="bid-form">
+        <input type="text" id="bidder-name" placeholder="Your Name" required>
+        <input type="email" id="bidder-email" placeholder="Your Email" required>
+        <input type="number" id="bid-amount" placeholder="Enter Bid Amount" required>
+        <button type="submit">Submit Bid</button>
+    </form>
+</section>
+<div class="bid-promo">
+    Products worth <strong>$5000, $3000, $2000</strong> are placed at 
+    <span style="color: yellow;">discounted bid prices!</span>
+</div>
+<section class="winners">
+    <h2>Previous Bidding Winners</h2>
+    <table id="winner-table">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Winning Bid</th>
+        </tr>
+        <!-- Winners will be added here -->
+    </table>
+</section>
+
+
+    <section class="winners">
+    <h2>Promo Winners</h2>
+    <table class="winners-table">
+        <thead>
+            <tr>
+                <th>Rank</th>
+                <th>Name</th>
+                <th>Promo Type</th>
+                <th>Amount ($)</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody id="promo-winners">
+            <tr>
+                <td>🏆 1st</td>
+                <td>Marlor Cindy</td>
+                <td>Exclusive Strain Bonus</td>
+                <td>$2,500</td>
+                <td class="winner">Winner</td>
+            </tr>
+            <tr>
+                <td>🥈 2nd</td>
+                <td>Jane Smith</td>
+                <td>Refer & Earn</td>
+                <td>$1,800</td>
+                <td class="runner-up">Runner-Up</td>
+            </tr>
+            <tr>
+                <td>🥉 3rd</td>
+                <td>Michael Johnson</td>
+                <td>Lucky Draw</td>
+                <td>$1,500</td>
+                <td class="top-bidder">Top Bidder</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+<footer>
+        <p>&copy; 2025 MAMMOTHFARMS. All rights reserved.</p>
+    </footer>
+</body>
+</html>
