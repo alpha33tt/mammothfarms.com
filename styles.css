@@ -300,7 +300,8 @@ img {
 .logo-right img {
     width: 60px; /* Adjust size */
     height: auto;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
+    margin-up: 30px;
 }
 
 .logo-left {
